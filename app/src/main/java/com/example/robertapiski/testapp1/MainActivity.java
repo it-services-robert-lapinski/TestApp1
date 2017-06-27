@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -23,8 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void addProject(View v) {
         final ListView projectsList = (ListView) findViewById(R.id.projectsList);
+        final TextView itemName = (TextView) findViewById(R.id.itemName);
 
-        projects.add("aaaa");
+        projects.add(itemName.getText().toString());
 
         final ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, projects);
         projectsList.setAdapter(adapter);
