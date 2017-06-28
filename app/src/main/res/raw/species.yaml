@@ -1,0 +1,10 @@
+---
+!com.example.robertapiski.testapp1.data.SpeciesDictionary
+name: Beech
+speciesList:
+  - !com.example.robertapiski.testapp1.data.Species
+    laName: Fagus sylvatica
+    plName: Buk pospolity
+  - !com.example.robertapiski.testapp1.data.Species
+    laName: Fagus crenata
+    plName: Buk karbowany
